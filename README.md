@@ -11,6 +11,12 @@
 将本地的仓库关联到github上
 5、git push -u origin master
 把代码上传到github仓库的
+6、git branch -a
+查看所有分支
+7、git branch
+查看当前使用分支（结果列表中前面标*号的表示当前使用分支）
+8、git checkout 分支名
+切换分支
 
 二、更新github仓库
 1、git status //查看仓库状态
@@ -18,3 +24,6 @@
 3、git commit -m "" //提交的备注
 4、git push origin master //将本地仓库的代码更新到github的仓库
 5、git pull //拉取当前分支的最新代码
+
+三、解决问题
+1、
