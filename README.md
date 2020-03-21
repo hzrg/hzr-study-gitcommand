@@ -1,6 +1,5 @@
 # hzr-study-gitcommand
-一、
-
+一、git常用命令
 1、git init
 在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）
 2、git add .
@@ -26,4 +25,11 @@
 5、git pull //拉取当前分支的最新代码
 
 三、解决问题
-1、
+1、使用git push -u origin master把代码上传到github仓库时：error:failed to push some refs to 'xxx'
+解决方法：git pull --rebase origin master
+git rebase --continue
+git add .idea/workspace.xml
+git rebase --continue
+git push -u origin master
+即：先pull后push
+
