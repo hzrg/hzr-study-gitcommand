@@ -1,6 +1,5 @@
 # hzr-study-gitcommand
-一、
-
+一、git常用命令
 1、git init
 在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）
 2、git add .
@@ -11,6 +10,18 @@
 将本地的仓库关联到github上
 5、git push -u origin master
 把代码上传到github仓库的
+6、git branch -a
+查看所有分支
+7、git branch
+查看当前使用分支（结果列表中前面标*号的表示当前使用分支）
+8、git checkout 分支名
+切换分支
+9、更新远程分支列表
+git remote update origin --prune
+10、删除远程分支Chapater6
+git push origin --delete Chapater6
+11、删除本地分支 Chapater6
+git branch -d  Chapater6
 
 二、更新github仓库
 1、git status //查看仓库状态
@@ -18,3 +29,13 @@
 3、git commit -m "" //提交的备注
 4、git push origin master //将本地仓库的代码更新到github的仓库
 5、git pull //拉取当前分支的最新代码
+
+三、解决问题
+1、使用git push -u origin master把代码上传到github仓库时：error:failed to push some refs to 'xxx'
+解决方法：git pull --rebase origin master
+git rebase --continue
+git add .idea/workspace.xml
+git rebase --continue
+git push -u origin master
+即：先pull后push
+
