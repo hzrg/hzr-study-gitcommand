@@ -34,6 +34,8 @@ git stash list
 16、恢复存储的内容
 git stash apply    git stash drop
 git stash pop
+17、创建并切换分支
+git checkout -b 分支名
 
 二、更新github仓库
 1、git status //查看仓库状态
