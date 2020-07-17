@@ -22,6 +22,17 @@ git remote update origin --prune
 git push origin --delete Chapater6
 11、删除本地分支 Chapater6
 git branch -d  Chapater6
+12、把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash
+13、合并分支
+git merge -m "merged buf fix 101" issue-101
+14、删除分支
+git branch -d issue-101
+15、查看保存的工作
+git stash list
+16、恢复存储的内容
+git stash apply    git stash drop
+git stash pop
 
 二、更新github仓库
 1、git status //查看仓库状态
