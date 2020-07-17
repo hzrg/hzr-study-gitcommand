@@ -16,6 +16,12 @@
 查看当前使用分支（结果列表中前面标*号的表示当前使用分支）
 8、git checkout 分支名
 切换分支
+9、更新远程分支列表
+git remote update origin --prune
+10、删除远程分支Chapater6
+git push origin --delete Chapater6
+11、删除本地分支 Chapater6
+git branch -d  Chapater6
 
 二、更新github仓库
 1、git status //查看仓库状态
