@@ -52,4 +52,7 @@ git add .idea/workspace.xml
 git rebase --continue
 git push -u origin master
 即：先pull后push
+2、git老是提交.idea/workspace.xml,临时删除命令：
+git rm --cached -r -f .idea
+git commit -m 'delete .idea'
 
